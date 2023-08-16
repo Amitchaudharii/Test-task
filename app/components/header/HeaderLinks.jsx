@@ -9,7 +9,7 @@ const HeaderLinks = ({ headerItems }) => {
           headerItems.map((value, index) => {
             return (
               <li key={index}>
-                <Link href="/" className="text-white text-lg font-semibold">
+                <Link href="/" className="text-white text-base font-medium">
                   {value}
                 </Link>
               </li>
