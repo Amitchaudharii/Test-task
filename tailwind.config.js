@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         heroBg: "url('/images/hero/heroBg.svg')",
+        whatGetBg: "url('/images/whatGet/whatgetBg.svg')",
       }),
     },
   },
