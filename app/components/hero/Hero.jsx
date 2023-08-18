@@ -3,6 +3,7 @@ import React from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 const Hero = () => {
   return (
@@ -46,4 +47,6 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default dynamic(() => Promise.resolve(Hero), {
+  ssr: false,
+});

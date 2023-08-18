@@ -3,8 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Icon from "../icon/Icon";
 
-const WhatYoureGetBox = (WhatYoureGetBoxProps) => {
-  const { ImgLink, title, desc, iconBg } = WhatYoureGetBoxProps;
+const VisualBox = (VisualBoxProps) => {
+  const { ImgLink, title, desc, iconBg } = VisualBoxProps;
 
   return (
     <>
@@ -23,4 +23,4 @@ const WhatYoureGetBox = (WhatYoureGetBoxProps) => {
   );
 };
 
-export default WhatYoureGetBox;
+export default VisualBox;

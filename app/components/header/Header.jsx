@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
 import Image from "next/image";
 import HeaderLinks from "./HeaderLinks";
-import { headerItems } from "@/app/constant/Header";
+import { headerItems } from "@/app/constant";
+import dynamic from "next/dynamic";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -46,4 +47,6 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default dynamic(() => Promise.resolve(Header), {
+  ssr: false,
+});
